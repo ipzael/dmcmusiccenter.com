@@ -1,0 +1,223 @@
+<style>
+    nav {
+        background: transparent;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+
+    nav ul {
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    nav ul li a {
+        color: whitesmoke;
+        display: block;
+        font-size: 14px;
+        padding: 4px 1em;
+        transition: 0.3s linear;
+    }
+
+    nav ul li a:hover {
+        color: #F7B500;
+
+    }
+
+    nav ul li:hover {
+        background: #126d9b;
+        background: transparent;
+    }
+
+    nav ul li ul {
+        border-bottom: 5px solid #F7B500;
+        display: none;
+        position: absolute;
+        width: 192px;
+        /* border-radius: 16px; */
+    }
+
+    nav ul li ul li {
+        border-top: 1px solid #444;
+        display: block;
+    }
+
+    nav ul li ul li:first-child {
+        border-top: none;
+    }
+
+    nav ul li ul li a {
+        color: black;
+        background: whitesmoke;
+        display: block;
+        padding: 10px 14px;
+    }
+
+    nav ul li ul li a:hover {
+        background: #126d9b;
+    }
+
+    .Header {
+        width: 100%;
+        text-align: center;
+        background: #0E3C6E;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: inherit;
+        z-index: 99;
+    }
+
+    .Header .LogoContainer {
+        text-align: center;
+        width: 30%;
+    }
+
+    .Header .LogoContainer #Logo {
+        background-image: url(https://dmcmusiccenter.com/wp-content/uploads/2022/03/Logo_dmc_2-1.webp);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 128px;
+        height: 64px;
+        margin: 1em;
+        display: inline-block;
+    }
+
+    .Header .Navigation {
+        text-align: center;
+        width: 30%;
+    }
+
+    .Header .SocialContainer {
+        text-align: center;
+        width: 30%;
+    }
+
+    @media only screen and (max-width: 512px) {
+        .Header .HeaderColumn {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    #Social {
+        display: inline-block;
+    }
+
+    #Social div {
+        min-width: 32px;
+        min-height: 32px;
+        background-color: #2E4F75;
+        display: inline-block;
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        margin: 0 4px;
+    }
+
+    #Social #Facebook {
+        background-image: url(http://dmcmusiccenter.com/wp-content/uploads/2022/12/facebook.svg);
+    }
+
+    #Social #Instagram {
+        background-image: url(http://dmcmusiccenter.com/wp-content/uploads/2022/12/instagram.svg);
+    }
+
+    #Social #Tiktok {
+        background-image: url(http://dmcmusiccenter.com/wp-content/uploads/2022/12/tiktok.svg);
+    }
+
+    #Social #Email {
+        background-image: url(http://dmcmusiccenter.com/wp-content/uploads/2022/12/envelope-solid.svg);
+    }
+
+    #Social #WhatsApp {
+        background-image: url(http://dmcmusiccenter.com/wp-content/uploads/2022/12/Digital_Glyph_White.svg);
+    }
+
+    .ehf-header #masthead {
+        display: none;
+    }
+</style>
+<div class="row Header">
+    <div class="HeaderColumn LogoContainer">
+        <a href="https://dmcmusiccenter.com/"><div id="Logo"></div></a>
+    </div>
+    <div class="HeaderColumn Navigation">
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="https://dmcmusiccenter.com/">Inicio</a></li>
+                    <li><a href="https://dmcmusiccenter.com/dmc/testimonios/">Testimonios</a></li>
+                    <li><a href="https://dmcmusiccenter.com/contacto/">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav>
+            <div class="container">
+                <ul>
+                    <li> <a href="#">Nosotros </a>
+                        <ul>
+                            <li><a href="https://dmcmusiccenter.com/about/">Quienes Somos</a></li>
+                            <li><a href="https://dmcmusiccenter.com/equipo-docente/">Equipo Docente</a></li>
+                            <li><a href="https://dmcmusiccenter.com/equipo-administrativo/">Equipo Administrativo</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> <a href="#">Oferta Academica</a>
+                        <ul>
+                            <li><a href="https://dmcmusiccenter.com/dmc/">Diplomados</a></li>
+                            <li><a href="https://dmcmusiccenter.com/dmc/cursos/">Cursos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://dmcmusiccenter.com/cart/">Carrito</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="HeaderColumn SocialContainer">
+        <div id="Social">
+            <a href="https://www.facebook.com/DanielsMusicCenter">
+                <div id="Facebook"></div>
+            </a>
+            <a href="https://www.instagram.com/danielsmusiccenter/">
+                <div id="Instagram"></div>
+            </a>
+            <a href="https://www.tiktok.com/@danielsmusiccenter">
+                <div id="Tiktok"></div>
+            </a>
+            <a href="#">
+                <div id="Email"></div>
+            </a>
+            <a href="https://wa.me/message/BHT3UI4T4MIAK1">
+                <div id="WhatsApp"></div>
+            </a>
+        </div>
+    </div>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('nav li').hover(
+            function () {
+                $('ul', this).stop().slideDown(200);
+            },
+            function () {
+                $('ul', this).stop().slideUp(200);
+            }
+        );
+    });
+</script>
